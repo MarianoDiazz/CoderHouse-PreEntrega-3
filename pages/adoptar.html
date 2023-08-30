@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mira nuestros hermosos compañeros para hacer de tu vida un lugar mejor">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Adoptar</title>
 </head>
 
@@ -46,11 +48,11 @@
     </nav>
 
     <main>
-        <div class="">
+        <div class="adopt">
             <img class="adopt__img"
                 src="https://img.freepik.com/foto-gratis/adorable-bulldog-blanco-retrato-cachorro-banner-social_53876-148022.jpg?w=1380&t=st=1692215901~exp=1692216501~hmac=60c1689c9036a2e02becb487719d14cf14afbed55cc44a239de5ad58fe8197d5"
-                alt="">
-            <h1 class="adopt__text">Tu puedes cambiar sus vidas</h1>
+                alt="Banner principal perro Buldog frances">
+            <h1 class="adopt__text" data-aos="flip-left">Tu puedes cambiar sus vidas</h1>
         </div>
 
         <section>
@@ -75,8 +77,98 @@
                 <button class="find-friend-button">Encuentra un Amigo</button>
             </div>
         </section>
+
+        <section class="cards container my-5">
+            <div class="cards__list row">
+                <div class="cards__item col-md-4 col-sm-6 my-3">
+                    <div class="card">
+                        <img src="https://img.freepik.com/foto-gratis/perro-pequeno-siendo-adorable-retrato-estudio_23-2149016947.jpg?w=1380&t=st=1692055113~exp=1692055713~hmac=d1b30dba6220be4bcdeafc1095d82bac98d707cfb014331c5d031b3cd99d172b"
+                            class="card__img" alt="Bucky - Perro pequeño">
+                        <div class="card__info text-center">
+                            <h5 class="card__info__name">Bucky</h5>
+                            <ul class="card__info__list">
+                                <li>Edad: 2 años</li>
+                                <li>Tamaño: Pequeño</li>
+                            </ul>
+                            <a href="#" class="card__info__button">¡Adoptar Ahora!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__item col-md-4 col-sm-6 my-3">
+                    <div class="card">
+                        <img src="https://img.freepik.com/foto-gratis/amistoso-perro-basenji-inteligente-dando-su-pata-cerca-aislado-blanco_346278-1626.jpg?w=1380&t=st=1692060075~exp=1692060675~hmac=67c8c8c5131ddc79f9df1dbbe7e9de313e129eb43fa3f152c02e7ab8ff118fc4"
+                            class="card__img" alt="Thor - Perro Jugueton">
+                        <div class="card__info text-center">
+                            <h5 class="card__info__name">Thor</h5>
+                            <ul class="card__info__list">
+                                <li>Edad: 2 años</li>
+                                <li>Tamaño: Mediano</li>
+                            </ul>
+                            <a href="#" class="card__info__button">¡Adoptar Ahora!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__item col-md-4 col-sm-6 my-3">
+                    <div class="card">
+                        <img src="https://img.freepik.com/foto-gratis/disparo-enfoque-selectivo-boerboel-marron-sentado-sobre-hierba-verde_181624-52780.jpg?w=1380&t=st=1692060271~exp=1692060871~hmac=97c1703ed726f4acf2ca0920adbae1905ff73e5f0516e86c2cfa90a65d175264"
+                            class="card__img" alt="Loki - Perro grande">
+                        <div class="card__info text-center">
+                            <h5 class="card__info__name">Loki</h5>
+                            <ul class="card__info__list">
+                                <li>Edad: 3 años</li>
+                                <li>Tamaño: Grande</li>
+                            </ul>
+                            <a href="#" class="card__info__button">¡Adoptar Ahora!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__item col-md-4 col-sm-6 my-3">
+                    <div class="card">
+                        <img src="https://img.freepik.com/psd-gratis/adorable-retrato-cachorro-jack-russell-retriever_53876-74020.jpg?w=826&t=st=1692060228~exp=1692060828~hmac=100b09eb5fade16e719bb01d2a47b1f7bad77f314db4cd652396a5c25763a3b3"
+                            class="card__img" alt="Ragnar - Perro pequeño divertido">
+                        <div class="card__info text-center">
+                            <h5 class="card__info__name">Ragnar</h5>
+                            <ul class="card__info__list">
+                                <li>Edad: 2 años</li>
+                                <li>Tamaño: Pequeño</li>
+                            </ul>
+                            <a href="#" class="card__info__button">¡Adoptar Ahora!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__item col-md-4 col-sm-6 my-3">
+                    <div class="card">
+                        <img src="https://img.freepik.com/foto-gratis/lindo-perro-marron-hogar_181624-41257.jpg?w=1380&t=st=1692060469~exp=1692061069~hmac=3081d9c0bffd987c9eb53631c2ebc94c6275aa5df9353f01661649c95dfdf69e"
+                            class="card__img" alt="Fede - Perro gracioso, mediano">
+                        <div class="card__info text-center">
+                            <h5 class="card__info__name">Fede</h5>
+                            <ul class="card__info__list">
+                                <li>Edad: 3 años</li>
+                                <li>Tamaño: Mediano</li>
+                            </ul>
+                            <a href="#" class="card__info__button">¡Adoptar Ahora!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__item col-md-4 col-sm-6 my-3">
+                    <div class="card">
+                        <img src="https://img.freepik.com/foto-gratis/perro-suelo_181624-9222.jpg?w=1380&t=st=1692060818~exp=1692061418~hmac=3fc3e8410454129f04aed1d5d542005324ad0a16816068fff058f2b3df2cb39e"
+                            class="card__img" alt="Feid - Perro mediano, buen compañero">
+                        <div class="card__info text-center">
+                            <h5 class="card__info__name">Feid</h5>
+                            <ul class="card__info__list">
+                                <li>Edad: 2 años</li>
+                                <li>Tamaño: Mediano</li>
+                            </ul>
+                            <a href="#" class="card__info__button">¡Adoptar Ahora!</a>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+
         <section>
-            <div class="container-fluid">
+            <div class="container-fluid" data-aos="fade-up">
                 <div class="row adopt__info">
                     <div class="col">
 
@@ -99,7 +191,7 @@
             <div class="container">
                 <h2 class="adopt__section-title">Proceso de Adopción</h2>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-down" data-aos-delay="300">
                         <div class="adopt__process-step">
                             <i class="fas fa-search adopt__process-icon"></i>
                             <h3 class="adopt__process-title">Encuentra tu Compañero</h3>
@@ -107,7 +199,7 @@
                                 peludo.</p>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-down" data-aos-delay="600">
                         <div class="adopt__process-step">
                             <i class="fas fa-heart adopt__process-icon"></i>
                             <h3 class="adopt__process-title">Completa la Solicitud</h3>
@@ -115,7 +207,7 @@
                                 conocerte mejor.</p>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-down" data-aos-delay="900">
                         <div class="adopt__process-step">
                             <i class="fas fa-home adopt__process-icon"></i>
                             <h3 class="adopt__process-title">Prepara tu Hogar</h3>
@@ -139,17 +231,21 @@
                 <div class="col-md-4">
                     <h3 class="footer-title">Enlaces</h3>
                     <ul class="footer-links">
-                        <li><a href="#" class="footer-link"><i class="fas fa-paw"></i> Adoptar mascota</a></li>
+                        <li><a href="./adoptar.html" class="footer-link"><i class="fas fa-paw"></i> Adoptar
+                                mascota</a></li>
                         <li><a href="#" class="footer-link"><i class="fas fa-image"></i> Galería</a></li>
-                        <li><a href="#" class="footer-link"><i class="fas fa-info-circle"></i> Sobre nosotros</a></li>
+                        <li><a href="./nosotros.html" class="footer-link"><i class="fas fa-info-circle"></i> Sobre
+                                nosotros</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
                     <h3 class="footer-title">Donar</h3>
                     <ul class="footer-links">
-                        <li><a href="#" class="footer-link"><i class="fas fa-hand-holding-heart"></i> Cómo donar</a>
+                        <li><a href="./donaciones.html" class="footer-link"><i class="fas fa-hand-holding-heart"></i>
+                                Cómo donar</a>
                         </li>
-                        <li><a href="#" class="footer-link"><i class="fas fa-donate"></i> Programas de donación</a></li>
+                        <li><a href="./donaciones.html" class="footer-link"><i class="fas fa-donate"></i>
+                                Programas de donación</a></li>
                         <li><a href="#" class="footer-link"><i class="fas fa-users"></i> Colaboradores</a></li>
                     </ul>
                 </div>
@@ -158,8 +254,9 @@
                     <p class="footer-subscribe-text">Recibe noticias y actualizaciones por correo
                         electrónico.</p>
                     <form class="footer-form">
-                        <input type="email" class="footer-input" placeholder="Ingresa tu correo electrónico">
-                        <button type="submit" class="footer-button">Suscribirse <i class="fas fa-envelope"></i></button>
+                        <input type="email" class="footer-form-input" placeholder="Ingresa tu correo electrónico">
+                        <button type="submit" class="footer-form-button">Suscribirse <i
+                                class="fas fa-envelope"></i></button>
                     </form>
                 </div>
             </div>
@@ -168,11 +265,13 @@
 
 
 
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

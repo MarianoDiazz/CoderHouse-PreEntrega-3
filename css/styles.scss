@@ -1,280 +1,35 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,700;1,500;1,700&display=swap');
 
 @import "./partials/variables";
 @import "./partials/reset";
 @import "./partials/header";
+@import "./partials/grid-home";
+@import "./partials/carousel";
+@import "./partials/cards";
+@import "./partials/footer";
 
-
-
-
-/* CAROUSEL */
-.carousel-inner {
-    .carousel-item {
-        .title-highlight {
-            font-size: 5rem;
-            color: $color-principal;
-            font-weight: 900;
-        }
-
-        .title-highlight-principal {
-            font-size: 4rem;
-            color: $color-principal;
-            text-shadow: -3px 3px #ffffff, -3px -3px #ffffff, 3px -3px #ffffff, 3px 3px #f3f3f2;
-            font-weight: 900;
-        }
-
-        .subtitle {
-            font-size: 1.2rem;
-            color: #7f8c8d;
-        }
-
-        .text-carousel {
-            position: absolute;
-            left: 50%;
-            top: 45%;
-            margin-right: 3rem;
-        }
-    }
-}
-
-
-/* SECCION GRID */
-.info {
-    padding: 0;
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-        "a a a a"
-        "b b c c"
-        "b b d d";
-    width: 100%;
-    align-items: center;
-
-    .box {
-        min-height: 15rem;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        color: white;
-        position: relative;
-        border-radius: 10px;
-        cursor: pointer;
-        transition: transform 0.3s, box-shadow 0.3s;
-        overflow: hidden;
-
-        h1 {
-            font-size: 2rem;
-            font-weight: 700;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-            margin-bottom: 10px;
-        }
-
-        p {
-            font-size: 1.3rem;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        &:hover {
-            transform: scale(1.02);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            z-index: 1;
-        }
-    }
-
-    .box1 {
-        grid-area: a;
-        background-image: url('https://img.freepik.com/foto-gratis/encantadoras-mascotas-mimadas-juegan-lado-lado-mirando-alerta-generada-ia_188544-13933.jpg?w=1380&t=st=1692042899~exp=1692043499~hmac=8c100edfd3cbd34c7247e99c74a1e16956cd97a90e6cdeb4bd7d3a1ad280d748');
-        background-position: center 25%;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .box2 {
-        grid-area: b;
-        background-image: url('https://img.freepik.com/foto-gratis/marido-mujer-positivos-juegan-perro-hombre-camisa-rayas-abraza-labrador-ternura_197531-13723.jpg?w=1380&t=st=1692042691~exp=1692043291~hmac=5e119b61b3ba43e31b0c19cdab2f3909092e9d69082e613ee1ecaa11861f4d2c');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100%;
-    }
-
-    .box3 {
-        grid-area: c;
-        background-image: url('https://img.freepik.com/foto-gratis/perro-rescate-disfrutando-ser-mascota-mujer-refugio_23-2148682929.jpg?w=1480&t=st=1692042366~exp=1692042966~hmac=1a5c2124d948a9c1945d558e6aef99140f3e3545737cb1856d1dbcdb71553030');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .box4 {
-        grid-area: d;
-        background-image: url('https://img.freepik.com/foto-gratis/arreglo-comida-mascotas-naturaleza-muerta_23-2148982349.jpg?w=1480&t=st=1692043357~exp=1692043957~hmac=a36ea4e329115e1298f3ba26ad7bfc4049e68e81037ba992886a41dc62f66933');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-}
-
-/* CARDS ADOPCION */
-.cards {
-    &__title {
-        font-size: 2.6rem;
-        color: #17A398;
-        font-weight: 900;
-        filter: drop-shadow(0 2px #2c3e50);
-    }
-
-    &__list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    &__item {
-        flex: 0 0 calc(33.333% - 1rem);
-        margin-bottom: 2rem;
-    }
-
-    .card {
-        border: 1px solid #ccc;
-        border-radius: 10px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        transition: transform 0.2s ease-in-out;
-        text-align: center;
-
-        &__img {
-            height: 15rem;
-            object-fit: cover;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-        }
-
-        &:hover {
-            transform: translateY(-5px);
-        }
-
-        &__info {
-            padding: 1rem;
-
-            &__name {
-                font-size: 1.5rem;
-                color: #333;
-                margin-bottom: 0.5rem;
-            }
-
-            &__list {
-                list-style: none;
-                padding: 0;
-
-                li {
-                    margin-bottom: 0.25rem;
-                }
-            }
-
-            &__button {
-                display: inline-block;
-                background-color: #17A398;
-                border-color: #17A398;
-                color: white;
-                font-weight: bold;
-                padding: 0.5rem 1rem;
-                border-radius: 5px;
-                text-decoration: none;
-                margin-top: 1rem;
-
-                &:hover {
-                    background-color: #3abbb0;
-                    border-color: #3abbb0;
-                }
-            }
-        }
-    }
-}
-
-
-/* FOOTER */
-
-.footer {
-    background-color: #333;
-    color: #fff;
-    padding: 60px 0;
-}
-
-.footer-title {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.footer-links {
-    list-style: none;
-    padding-left: 0;
-}
-
-.footer-link {
-    font-size: 16px;
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.footer-link:hover {
-    color: #ff9900;
-}
-
-.footer-subscribe-text {
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-.footer-form {
-    display: flex;
-}
-
-.footer-input {
-    width: 50%;
-    flex-grow: 1;
-    padding: 10px;
-    border: none;
-    border-radius: 5px 0 0 5px;
-    font-size: 16px;
-}
-
-.footer-button {
-    background-color: #ff9900;
-    color: #fff;
-    border: none;
-    border-radius: 0 5px 5px 0;
-    padding: 10px 10px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.footer-button:hover {
-    background-color: #ffbf4d;
-}
 
 /* ======== */
 /* PAGINA ADOPTAR */
 /* ========= */
-.adopt__img {
-    width: 100vw;
-    max-height: 45rem;
-    object-fit: cover;
-}
+.adopt {
+    &__img {
+        width: 100vw;
+        max-height: 45rem;
+        object-fit: cover;
+    }
 
-.adopt__text {
-    position: absolute;
-    top: 40%;
-    left: 70%;
-    font-size: 3rem;
-    font-weight: 800;
+    &__text {
+        position: absolute;
+        top: 40%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        font-size: 3.5rem;
+        font-weight: 900;
+        color: $color-secundario;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        z-index: 2;
+    }
 }
 
 .form__adopt {
@@ -288,14 +43,14 @@
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     gap: 20px;
-}
 
-.form__adopt h1 {
-    flex-basis: 100%;
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #333;
+    h1 {
+        flex-basis: 100%;
+        text-align: center;
+        font-size: 2.3rem;
+        margin-bottom: 20px;
+        color: #333;
+    }
 }
 
 .form-select {
@@ -313,28 +68,28 @@
     display: flex;
     gap: 10px;
     align-items: center;
-}
 
-.icon-button {
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    outline: none;
-}
+    .icon-button {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        outline: none;
 
-.icon-button i {
-    font-size: 36px;
-    color: #666;
-    transition: color 0.3s;
-}
+        i {
+            font-size: 36px;
+            color: #666;
+            transition: color 0.3s;
 
-.icon-button:hover i {
-    color: #ff9900;
+            &:hover {
+                color: $color-principal;
+            }
+        }
+    }
 }
 
 .find-friend-button {
-    background-color: #ff9900;
+    background-color: $color-principal;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -342,10 +97,10 @@
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
-}
 
-.find-friend-button:hover {
-    background-color: #ffbf4d;
+    &:hover {
+        background-color: $color-hover;
+    }
 }
 
 /* SECCION INFO */

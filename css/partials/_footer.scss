@@ -1,0 +1,69 @@
+
+/* FOOTER */
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 60px 0;
+
+    &-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    &-links {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    &-link {
+        font-size: 16px;
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s;
+
+        &:hover {
+            color: $color-secundario;
+
+        }
+    }
+
+    &-suscribe-text {
+        font-size: 16px;
+        margin-bottom: 20px;
+
+    }
+
+    &-form {
+        display: flex;
+
+        &-input {
+            width: 50%;
+            flex-grow: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px 0 0 5px;
+            font-size: 16px;
+        }
+
+        &-button {
+            background-color: $color-secundario;
+            color: #fff;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            padding: 10px 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: #f1bc0e;
+
+            }
+        }
+
+
+    }
+
+}
+

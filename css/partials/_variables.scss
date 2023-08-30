@@ -1,2 +1,23 @@
 $color-principal: #17A398;
 $color-hover: #3DCCC7;
+$color-secundario: #ff9900;
+
+
+@mixin box($area, $position, $repeat, $size) {
+    grid-area: $area;
+    background-position: $position;
+    background-repeat: $repeat;
+    background-size: $size;
+}
+
+@mixin button {
+    display: inline-block;
+    background-color: #17A398;
+    border-color: #17A398;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 1rem;
+}
