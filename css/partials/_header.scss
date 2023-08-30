@@ -1,0 +1,19 @@
+/* NAVBAR */
+.navbar-nav {
+    .nav-item {
+        .nav-link:hover {
+            border-bottom: 2px solid $color-principal;
+            outline: none;
+            font-size: 1.3rem;
+        }
+
+        .donar-link {
+            font-weight: bold;
+            color: $color-principal;
+
+            &:hover {
+                color: $color-hover;
+            }
+        }
+    }
+}
