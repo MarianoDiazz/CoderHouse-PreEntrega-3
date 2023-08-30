@@ -1,0 +1,697 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,700;1,500;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+}
+
+/* NAVBAR */
+.navbar-nav .nav-item .nav-link:hover {
+    border-bottom: 2px solid #17A398;
+    outline: none;
+}
+
+.navbar-nav .nav-item .donar-link {
+    font-weight: bold;
+    color: #17A398;
+}
+
+.navbar-nav .nav-item .donar-link:hover {
+    color: #3DCCC7;
+}
+
+
+/* CAROUSEL */
+
+.title-highlight {
+    font-size: 5rem;
+    color: #17A398;
+    font-weight: 900;
+}
+
+.title-highlight-principal {
+    font-size: 4rem;
+    color: #17A398;
+    text-shadow: -3px 3px #ffffff, -3px -3px #ffffff, 3px -3px #ffffff, 3px 3px #f3f3f2;
+    font-weight: 900;
+
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+}
+
+.text-carousel {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    margin-right: 3rem;
+}
+
+.carousel-indicators button.active {
+    background-color: #ffffff;
+}
+
+/* SECCION GRID */
+.info {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "a a a a"
+        "b b c c"
+        "b b d d";
+    width: 100%;
+    align-items: center;
+}
+
+.box {
+    min-height: 15rem;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+
+}
+
+.box h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)
+}
+
+.info:hover .box:not(:hover) {
+    opacity: 0.8;
+    filter: blur(3px);
+}
+
+.box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+
+.box1 {
+    grid-area: a;
+    background-image: url('https://img.freepik.com/foto-gratis/encantadoras-mascotas-mimadas-juegan-lado-lado-mirando-alerta-generada-ia_188544-13933.jpg?w=1380&t=st=1692042899~exp=1692043499~hmac=8c100edfd3cbd34c7247e99c74a1e16956cd97a90e6cdeb4bd7d3a1ad280d748');
+    background-position: center 25%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box2 {
+    grid-area: b;
+    background-image: url('https://img.freepik.com/foto-gratis/marido-mujer-positivos-juegan-perro-hombre-camisa-rayas-abraza-labrador-ternura_197531-13723.jpg?w=1380&t=st=1692042691~exp=1692043291~hmac=5e119b61b3ba43e31b0c19cdab2f3909092e9d69082e613ee1ecaa11861f4d2c');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.box3 {
+    grid-area: c;
+    background-image: url('https://img.freepik.com/foto-gratis/perro-rescate-disfrutando-ser-mascota-mujer-refugio_23-2148682929.jpg?w=1480&t=st=1692042366~exp=1692042966~hmac=1a5c2124d948a9c1945d558e6aef99140f3e3545737cb1856d1dbcdb71553030');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box4 {
+    grid-area: d;
+    background-image: url('https://img.freepik.com/foto-gratis/arreglo-comida-mascotas-naturaleza-muerta_23-2148982349.jpg?w=1480&t=st=1692043357~exp=1692043957~hmac=a36ea4e329115e1298f3ba26ad7bfc4049e68e81037ba992886a41dc62f66933');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* CARDS ADOPCION */
+.cards_title {
+    font-size: 2.6rem;
+    color: #17A398;
+    font-weight: 900;
+    filter: drop-shadow(0 2px #2c3e50)
+}
+
+.custom-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+}
+
+.custom-card img {
+    height: 15rem;
+    object-fit: cover;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.custom-btn {
+    background-color: #17A398;
+    border-color: #17A398;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.custom-btn:hover {
+    background-color: #3abbb0;
+    border-color: #3abbb0;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 60px 0;
+}
+
+.footer-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-link {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: #ff9900;
+}
+
+.footer-subscribe-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer-form {
+    display: flex;
+}
+
+.footer-input {
+    width: 50%;
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+}
+
+.footer-button {
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding: 10px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer-button:hover {
+    background-color: #ffbf4d;
+}
+
+/* ======== */
+/* PAGINA ADOPTAR */
+/* ========= */
+.adopt__img {
+    width: 100vw;
+    max-height: 45rem;
+    object-fit: cover;
+}
+
+.adopt__text {
+    position: absolute;
+    top: 40%;
+    left: 70%;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.form__adopt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 40px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+}
+
+.form__adopt h1 {
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-select {
+    flex: 1;
+    max-width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+}
+
+.icon-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.icon-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+}
+
+.icon-button i {
+    font-size: 36px;
+    color: #666;
+    transition: color 0.3s;
+}
+
+.icon-button:hover i {
+    color: #ff9900;
+}
+
+.find-friend-button {
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.find-friend-button:hover {
+    background-color: #ffbf4d;
+}
+
+/* SECCION INFO */
+
+.adopt__info {
+    background-image: url("https://img.freepik.com/foto-gratis/vista-frontal-hermoso-perro-espacio-copia_23-2148786560.jpg?w=1800&t=st=1692218237~exp=1692218837~hmac=570a03397a06fc5dc0195be2ceeb90af4b7f68c0c26db7d78d25f22f3497045f");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.adopt__info__title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.adopt__info_parrafo {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: #555;
+
+}
+
+.adopt-button {
+    background-color: #3b3b3b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.adopt-button:hover {
+    background-color: #ffbf4d;
+    color: #333;
+}
+
+
+.adopt__process-section {
+    background-color: #f7f7f7;
+    padding: 60px 0;
+}
+
+.adopt__section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.adopt__process-step {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.adopt__process-icon {
+    font-size: 36px;
+    color: #ff9900;
+    margin-bottom: 10px;
+}
+
+.adopt__process-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.adopt__process-text {
+    font-size: 16px;
+    color: #555;
+}
+
+
+
+/* ============= */
+/* PAGINA NOSOTROS */
+/* ============= */
+
+.about-section {
+    padding: 4rem 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 40px;
+    font-weight: 900;
+    color: #17A398;
+}
+
+.about-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about-subtitle {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+
+/* ============= */
+/* PAGINA CONTACTANOS */
+/* ============= */
+
+.contact-section {
+    padding: 80px 0;
+    background-color: #f8f8f8;
+}
+
+.contact-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* ============= */
+/* PAGINA DONACIONES */
+/* ============= */
+
+.donaciones__section {
+    padding: 40px 0;
+}
+
+.donaciones__title {
+    font-weight: 800;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #17A398;
+    margin-bottom: 20px;
+}
+
+.donaciones__text {
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 30px;
+}
+
+.donaciones__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.donaciones__form {
+    height: 100%;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.donaciones__row {
+    margin-bottom: 15px;
+}
+
+.donaciones__select,
+.donaciones__input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.donaciones__button {
+    background-color: #17A398;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.donaciones__button:hover {
+    background-color: #3DCCC7;
+}
+
+/* Historias adopciones */
+.donaciones__historias {
+    padding: 40px 0;
+    background-color: #f7f7f7;
+}
+
+.donaciones__historias-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #17A398;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.donaciones__historia {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.donaciones__historia-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.donaciones__historia-text {
+    font-size: 16px;
+    color: #333333;
+    margin: 0;
+}
+
+
+
+/* MEDIA QUERIES */
+@media (max-width: 1110px) {
+    .title-highlight {
+        font-size: 2.2rem;
+        font-weight: bold;
+        color: #2c3e50;
+        margin-bottom: 1rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+        color: #7f8c8d;
+    }
+
+    .adopt__text {
+        display: none;
+    }
+}
+
+@media (max-width: 995px) {
+    .about-section {
+        display: flex;
+        padding: 40px 0;
+    }
+
+    .about-image {
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .section-title {
+        font-size: 3rem;
+    }
+
+    .about-subtitle {
+        font-size: 22px;
+    }
+
+    .about-text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 30px 0;
+    }
+
+    .footer .col-md-6 {
+        margin-bottom: 20px;
+    }
+
+    .adopt__info {
+        display: block;
+        text-align: center;
+        align-items: center;
+    }
+
+    .donaciones__historia {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .donaciones__historia-img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media screen and (max-width: 475px) {
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .box {
+        margin: 0;
+        width: 100%;
+    }
+
+    .about-image {
+        max-width: 100%;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .adopt__info {
+        display: flex;
+        background-image: url("https://img.freepik.com/foto-gratis/vista-frontal-hermoso-perro-espacio-copia_23-2148786560.jpg?w=1800&t=st=1692218237~exp=1692218837~hmac=570a03397a06fc5dc0195be2ceeb90af4b7f68c0c26db7d78d25f22f3497045f");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 15rem;
+
+    }
+
+    .adopt__info_parrafo {
+        display: none;
+    }
+
+}
