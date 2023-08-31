@@ -382,33 +382,29 @@
 /* ============= */
 /* PAGINA NOSOTROS */
 /* ============= */
-.about-section {
+.about {
   padding: 4rem 0;
 }
-
-.section-title {
+.about__title {
   text-align: center;
   font-size: 3.5rem;
   margin-bottom: 40px;
   font-weight: 900;
   color: #17A398;
 }
-
-.about-image {
+.about__image {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
   margin-bottom: 20px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
-
-.about-subtitle {
+.about__subtitle {
   font-size: 24px;
   color: #333;
   margin-bottom: 20px;
 }
-
-.about-text {
+.about__text {
   font-size: 1.2rem;
   line-height: 1.5;
   color: #555;
@@ -559,11 +555,11 @@
   }
 }
 @media (max-width: 995px) {
-  .about-section {
+  .about {
     display: flex;
     padding: 40px 0;
   }
-  .about-image {
+  .about__image {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
@@ -571,13 +567,13 @@
     margin-bottom: 20px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
   }
-  .section-title {
+  .about__title {
     font-size: 3rem;
   }
-  .about-subtitle {
+  .about__subtitle {
     font-size: 22px;
   }
-  .about-text {
+  .about__text {
     font-size: 14px;
   }
 }
