@@ -224,7 +224,6 @@
   background-color: #f1bc0e;
 }
 
-/* ======== */
 /* PAGINA ADOPTAR */
 /* ========= */
 .adopt__img {
@@ -322,23 +321,20 @@
   align-items: center;
   justify-content: center;
 }
-
 .adopt__info__title {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 20px;
   color: #333;
 }
-
 .adopt__info_parrafo {
   font-size: 1.3rem;
   line-height: 1.5;
   margin-bottom: 30px;
   color: #555;
 }
-
-.adopt-button {
-  background-color: #3b3b3b;
+.adopt__info__button {
+  background-color: #17A398;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -347,15 +343,9 @@
   cursor: pointer;
   transition: background-color 0.3s;
 }
-
-.adopt-button:hover {
-  background-color: #ffbf4d;
+.adopt__info__button:hover {
+  background-color: #3DCCC7;
   color: #333;
-}
-
-.adopt__process-section {
-  background-color: #f7f7f7;
-  padding: 60px 0;
 }
 
 .adopt__section-title {
@@ -363,6 +353,10 @@
   margin-bottom: 40px;
 }
 
+.adopt__process {
+  background-color: #f7f7f7;
+  padding: 60px 0;
+}
 .adopt__process-step {
   text-align: center;
   padding: 20px;
@@ -370,19 +364,16 @@
   border-radius: 10px;
   margin-bottom: 30px;
 }
-
 .adopt__process-icon {
   font-size: 36px;
   color: #ff9900;
   margin-bottom: 10px;
 }
-
 .adopt__process-title {
   font-size: 24px;
   margin-bottom: 10px;
   color: #333;
 }
-
 .adopt__process-text {
   font-size: 16px;
   color: #555;
