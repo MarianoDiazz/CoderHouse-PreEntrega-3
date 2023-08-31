@@ -411,34 +411,46 @@
   margin-bottom: 20px;
 }
 
-/* ============= */
 /* PAGINA CONTACTANOS */
-/* ============= */
-.contact-section {
+.contact {
   padding: 80px 0;
   background-color: #f8f8f8;
 }
-
-.contact-title {
-  font-size: 28px;
+.contact__title {
+  text-align: center;
+  font-size: 3rem;
   font-weight: bold;
-  color: #333;
+  color: #17A398;
   margin-bottom: 30px;
 }
-
-.contact-info {
+.contact__subtitle {
+  color: #326663;
+}
+.contact__info {
   font-size: 16px;
   color: #555;
   margin-bottom: 10px;
 }
-
-/* ============= */
-/* PAGINA DONACIONES */
-/* ============= */
-.donaciones__section {
-  padding: 40px 0;
+.contact__btn {
+  display: inline-block;
+  background-color: #17A398;
+  border-color: #17A398;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 1rem;
+  border: none;
+}
+.contact__btn:hover {
+  background-color: #3DCCC7;
 }
 
+/* PAGINA DONACIONES */
+.donaciones {
+  padding: 40px 0;
+}
 .donaciones__title {
   font-weight: 800;
   text-align: center;
@@ -447,13 +459,11 @@
   color: #17A398;
   margin-bottom: 20px;
 }
-
-.donaciones__text {
+.donaciones___text {
   font-size: 18px;
   color: #333333;
   margin-bottom: 30px;
 }
-
 .donaciones__image {
   width: 100%;
   height: 100%;
@@ -462,7 +472,6 @@
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
-
 .donaciones__form {
   height: 100%;
   padding: 20px;
@@ -470,21 +479,24 @@
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
-
-.donaciones__row {
+.donaciones__form__row {
   margin-bottom: 15px;
 }
-
-.donaciones__select,
-.donaciones__input {
+.donaciones__form__select {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 14px;
 }
-
-.donaciones__button {
+.donaciones__form__input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.donaciones__form__button {
   background-color: #17A398;
   color: #fff;
   border: none;
@@ -494,17 +506,13 @@
   cursor: pointer;
   transition: background-color 0.3s;
 }
-
-.donaciones__button:hover {
+.donaciones__form__button:hover {
   background-color: #3DCCC7;
 }
-
-/* Historias adopciones */
 .donaciones__historias {
   padding: 40px 0;
   background-color: #f7f7f7;
 }
-
 .donaciones__historias-title {
   font-size: 2.5rem;
   font-weight: bold;
@@ -512,7 +520,6 @@
   text-align: center;
   margin-bottom: 20px;
 }
-
 .donaciones__historia {
   padding: 20px;
   border-radius: 10px;
@@ -522,7 +529,6 @@
   display: flex;
   align-items: center;
 }
-
 .donaciones__historia-img {
   width: 100px;
   height: 100px;
@@ -531,7 +537,6 @@
      object-fit: cover;
   margin-right: 20px;
 }
-
 .donaciones__historia-text {
   font-size: 16px;
   color: #333333;

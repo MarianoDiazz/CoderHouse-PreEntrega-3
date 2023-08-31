@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -47,7 +47,7 @@
     </nav>
 
     <main class="container">
-        <section class="donaciones__section mt-5">
+        <section class="donaciones mt-5">
             <h2 class="donaciones__title">Donar</h2>
             <p class="donaciones__text">Tu generosa donación nos ayuda a seguir brindando cuidado y apoyo a los animales
                 necesitados. Cada contribución cuenta y marca la diferencia en la vida de un amigo peludo.</p>
@@ -58,9 +58,9 @@
                 </div>
                 <div class="col-md-6">
                     <form class="donaciones__form" autocomplete="off">
-                        <div class="donaciones__row">
+                        <div class="donaciones__form__row">
                             <label for="amount" class="form-label">Selecciona la Cantidad</label>
-                            <select class="donaciones__select" id="amount" name="amount" required>
+                            <select class="donaciones__form__select" id="amount" name="amount" required>
                                 <option value="" disabled selected>Selecciona una cantidad</option>
                                 <option value="100">$100</option>
                                 <option value="500">$500</option>
@@ -68,26 +68,26 @@
                                 <option value="5000">$5000</option>
                             </select>
                         </div>
-                        <div class="donaciones__row">
+                        <div class="donaciones__form__row">
                             <label for="cardNumber" class="form-label">Número de Tarjeta</label>
-                            <input type="number" class="donaciones__input" id="cardNumber" name="cardNumber" required>
+                            <input type="number" class="donaciones__form__input" id="cardNumber" name="cardNumber" required>
                         </div>
-                        <div class="donaciones__row">
+                        <div class="donaciones__form__row">
                             <label for="cardHolder" class="form-label">Titular de la Tarjeta</label>
-                            <input type="text" class="donaciones__input" id="cardHolder" name="cardHolder" required>
+                            <input type="text" class="donaciones__form__input" id="cardHolder" name="cardHolder" required>
                         </div>
-                        <div class="donaciones__row">
+                        <div class="donaciones__form__row">
                             <div class="col-md-6">
                                 <label for="expiration" class="form-label">Fecha de Vencimiento</label>
-                                <input type="number" class="donaciones__input" id="expiration" name="expiration"
+                                <input type="number" class="donaciones__form__input" id="expiration" name="expiration"
                                     required>
                             </div>
                             <div class="col-md-6">
                                 <label for="cvv" class="form-label">CVV</label>
-                                <input type="number" class="donaciones__input" id="cvv" name="cvv" required>
+                                <input type="number" class="donaciones__form__input" id="cvv" name="cvv" required>
                             </div>
                         </div>
-                        <button type="submit" class="donaciones__button">Donar Ahora <i
+                        <button type="submit" class="donaciones__form__button">Donar Ahora <i
                                 class="fas fa-arrow-right"></i></button>
                     </form>
                 </div>

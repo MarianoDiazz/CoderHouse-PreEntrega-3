@@ -1,0 +1,108 @@
+/* MEDIA QUERIES */
+@media (max-width: 1110px) {
+    .title-highlight {
+        font-size: 2.2rem;
+        font-weight: bold;
+        color: #2c3e50;
+        margin-bottom: 1rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+        color: #7f8c8d;
+    }
+
+    .adopt__text {
+        display: none;
+    }
+}
+
+@media (max-width: 995px) {
+    .about {
+        display: flex;
+        padding: 40px 0;
+    }
+
+    .about__image {
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .about__title {
+        font-size: 3rem;
+    }
+
+    .about__subtitle {
+        font-size: 22px;
+    }
+
+    .about__text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 30px 0;
+    }
+
+    .footer .col-md-6 {
+        margin-bottom: 20px;
+    }
+
+    .adopt__info {
+        display: block;
+        text-align: center;
+        align-items: center;
+    }
+
+    .donaciones__historia {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .donaciones__historia-img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media screen and (max-width: 475px) {
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .box {
+        margin: 0;
+        width: 100%;
+    }
+
+    .about-image {
+        max-width: 100%;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .adopt__info {
+        display: flex;
+        background-image: url("https://img.freepik.com/foto-gratis/vista-frontal-hermoso-perro-espacio-copia_23-2148786560.jpg?w=1800&t=st=1692218237~exp=1692218837~hmac=570a03397a06fc5dc0195be2ceeb90af4b7f68c0c26db7d78d25f22f3497045f");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 15rem;
+
+    }
+
+    .adopt__info_parrafo {
+        display: none;
+    }
+
+}
