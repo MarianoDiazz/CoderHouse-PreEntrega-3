@@ -384,6 +384,7 @@
 /* ============= */
 .about {
   padding: 4rem 0;
+  background-color: #e5f4f7;
 }
 .about__title {
   text-align: center;
@@ -414,7 +415,7 @@
 /* PAGINA CONTACTANOS */
 .contact {
   padding: 80px 0;
-  background-color: #f8f8f8;
+  background: linear-gradient(to bottom, #f6f9fc, #e0e7ef);
 }
 .contact__title {
   text-align: center;
@@ -459,9 +460,9 @@
   color: #17A398;
   margin-bottom: 20px;
 }
-.donaciones___text {
+.donaciones__text {
   font-size: 18px;
-  color: #333333;
+  color: #555;
   margin-bottom: 30px;
 }
 .donaciones__image {
@@ -475,7 +476,7 @@
 .donaciones__form {
   height: 100%;
   padding: 20px;
-  background-color: #f7f7f7;
+  background-color: #e5f4f7;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -522,12 +523,18 @@
 }
 .donaciones__historia {
   padding: 20px;
+  margin-bottom: 30px;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   background-color: #fff;
-  margin-bottom: 20px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.donaciones__historia:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
 }
 .donaciones__historia-img {
   width: 100px;
