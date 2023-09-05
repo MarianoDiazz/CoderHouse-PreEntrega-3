@@ -1,15 +1,18 @@
 /* MEDIA QUERIES */
-@media (max-width: 1110px) {
-    .title-highlight {
-        font-size: 2.2rem;
-        font-weight: bold;
-        color: #2c3e50;
-        margin-bottom: 1rem;
-    }
+@media (max-width: 1315px) {
+    .carousel-inner {
+        .carousel-item {
+            .title-highlight {
+                font-size: 3rem;
+                color: $color-principal;
+                margin-bottom: 1rem;
+            }
 
-    .subtitle {
-        font-size: 1rem;
-        color: #7f8c8d;
+            .subtitle {
+                font-size: 1rem;
+                color: #7f8c8d;
+            }
+        }
     }
 
     .adopt__text {
@@ -18,6 +21,15 @@
 }
 
 @media (max-width: 995px) {
+    .carousel-inner {
+        .carousel-item {
+            .subtitle {
+                display: none;
+            }
+        }
+
+    }
+
     .about {
         display: flex;
         padding: 40px 0;
