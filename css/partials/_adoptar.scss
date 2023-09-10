@@ -10,9 +10,9 @@
     &__text {
         position: absolute;
         top: 40%;
-        left: 70%;
+        left: 55%;
         transform: translate(-50%, -50%);
-        font-size: 3.5rem;
+        font-size: 3.7rem;
         font-weight: 900;
         color: $color-secundario;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -110,9 +110,9 @@
     }
 
     &_parrafo {
+        max-width: 80%;
         font-size: 1.3rem;
         line-height: 1.5;
-        margin-bottom: 30px;
         color: #555;
 
     }
