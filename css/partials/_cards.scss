@@ -2,7 +2,7 @@
 .cards {
     &__title {
         font-size: 2.6rem;
-        color: #17A398;
+        color: $color-principal;
         font-weight: 900;
         filter: drop-shadow(0 2px #2c3e50);
     }

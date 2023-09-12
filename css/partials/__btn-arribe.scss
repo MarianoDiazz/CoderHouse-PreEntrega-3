@@ -1,0 +1,19 @@
+/* Estilos para el botón de ir arriba */
+.btn-volver-arriba {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: $color-principal;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn-volver-arriba:hover {
+    background-color: $color-hover;
+}

@@ -1,3 +1,7 @@
+@charset "UTF-8";
+/* LightSalmon */
+/* Red (hover) */
+/* SpringGreen */
 @import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,700;1,500;1,700&display=swap");
 * {
   padding: 0;
@@ -8,16 +12,16 @@
 
 /* NAVBAR */
 .navbar-nav .nav-item .nav-link:hover {
-  border-bottom: 2px solid #17A398;
+  border-bottom: 2px solid #FF6347;
   outline: none;
   font-size: 1.3rem;
 }
 .navbar-nav .nav-item .donar-link {
   font-weight: bold;
-  color: #17A398;
+  color: #FF6347;
 }
 .navbar-nav .nav-item .donar-link:hover {
-  color: #3DCCC7;
+  color: #FF4500;
 }
 
 /* SECCION GRID */
@@ -93,12 +97,12 @@
 /* CAROUSEL */
 .carousel-inner .carousel-item .title-highlight {
   font-size: 5rem;
-  color: #17A398;
+  color: #FF6347;
   font-weight: 900;
 }
 .carousel-inner .carousel-item .title-highlight-principal {
   font-size: 4rem;
-  color: #17A398;
+  color: #FF6347;
   text-shadow: -3px 3px #ffffff, -3px -3px #ffffff, 3px -3px #ffffff, 3px 3px #f3f3f2;
   font-weight: 900;
 }
@@ -110,13 +114,13 @@
   position: absolute;
   left: 50%;
   top: 45%;
-  margin-right: 3rem;
+  padding: 2rem 8rem;
 }
 
 /* CARDS PERRITOS */
 .cards__title {
   font-size: 2.6rem;
-  color: #17A398;
+  color: #FF6347;
   font-weight: 900;
   filter: drop-shadow(0 2px #2c3e50);
 }
@@ -159,17 +163,18 @@
 }
 .cards .card__info__button {
   display: inline-block;
-  background-color: #17A398;
-  border-color: #17A398;
-  color: white;
-  font-weight: bold;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: #FF6347;
+  color: #fff;
   text-decoration: none;
-  margin-top: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
 .cards .card__info__button:hover {
-  background-color: #3DCCC7;
+  background-color: #FF4500;
 }
 
 /* FOOTER */
@@ -193,7 +198,7 @@
   transition: color 0.3s;
 }
 .footer-link:hover {
-  color: #ff9900;
+  color: #f3d6ac;
 }
 .footer-suscribe-text {
   font-size: 16px;
@@ -211,7 +216,7 @@
   font-size: 16px;
 }
 .footer-form-button {
-  background-color: #ff9900;
+  background-color: #FF6347;
   color: #fff;
   border: none;
   border-radius: 0 5px 5px 0;
@@ -221,7 +226,7 @@
   transition: background-color 0.3s;
 }
 .footer-form-button:hover {
-  background-color: #f1bc0e;
+  background-color: #FF4500;
 }
 
 /* PAGINA ADOPTAR */
@@ -239,7 +244,7 @@
   transform: translate(-50%, -50%);
   font-size: 3.7rem;
   font-weight: 900;
-  color: #ff9900;
+  color: #f3d6ac;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   z-index: 2;
 }
@@ -293,11 +298,11 @@
   transition: color 0.3s;
 }
 .icon-container .icon-button i:hover {
-  color: #17A398;
+  color: #FF6347;
 }
 
 .find-friend-button {
-  background-color: #17A398;
+  background-color: #FF6347;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -307,7 +312,7 @@
   transition: background-color 0.3s;
 }
 .find-friend-button:hover {
-  background-color: #3DCCC7;
+  background-color: #FF4500;
 }
 
 /* SECCION INFO */
@@ -320,63 +325,88 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  padding: 2rem;
 }
+
 .adopt__info__title {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 20px;
-  color: #333;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
 .adopt__info_parrafo {
   max-width: 80%;
   font-size: 1.3rem;
   line-height: 1.5;
-  color: #555;
-}
-.adopt__info__button {
-  background-color: #17A398;
   color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-.adopt__info__button:hover {
-  background-color: #3DCCC7;
-  color: #333;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
-.adopt__section-title {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
+/* Estilos para la sección "Proceso de Adopción" */
 .adopt__process {
   background-color: #f7f7f7;
   padding: 60px 0;
-}
-.adopt__process-step {
   text-align: center;
-  padding: 20px;
+}
+
+.adopt__process-step {
   border: 1px solid #ccc;
   border-radius: 10px;
+  padding: 20px;
   margin-bottom: 30px;
+  transition: transform 0.3s ease-in-out;
 }
+
+.adopt__process-step:hover {
+  transform: scale(1.05);
+  /* Aumenta ligeramente el tamaño al pasar el cursor sobre un paso */
+}
+
 .adopt__process-icon {
   font-size: 36px;
-  color: #ff9900;
+  color: #FF6347;
+  /* Puedes elegir un color que combine con tu paleta de colores */
   margin-bottom: 10px;
 }
+
 .adopt__process-title {
   font-size: 24px;
   margin-bottom: 10px;
   color: #333;
 }
+
 .adopt__process-text {
   font-size: 16px;
   color: #555;
+}
+
+/* Estilos para los botones */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FF6347;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #FF4500;
+}
+
+/* Estilos para el título de la sección */
+.adopt__section-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 40px;
 }
 
 /* ============= */
@@ -391,7 +421,7 @@
   font-size: 3.5rem;
   margin-bottom: 40px;
   font-weight: 900;
-  color: #17A398;
+  color: #FF6347;
 }
 .about__image {
   max-width: 100%;
@@ -421,7 +451,7 @@
   text-align: center;
   font-size: 3rem;
   font-weight: bold;
-  color: #17A398;
+  color: #FF6347;
   margin-bottom: 30px;
 }
 .contact__subtitle {
@@ -434,18 +464,19 @@
 }
 .contact__btn {
   display: inline-block;
-  background-color: #17A398;
-  border-color: #17A398;
-  color: white;
-  font-weight: bold;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: #FF6347;
+  color: #fff;
   text-decoration: none;
-  margin-top: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
   border: none;
 }
 .contact__btn:hover {
-  background-color: #3DCCC7;
+  background-color: #FF4500;
 }
 
 /* PAGINA DONACIONES */
@@ -457,7 +488,7 @@
   text-align: center;
   font-size: 4rem;
   font-weight: bold;
-  color: #17A398;
+  color: #FF6347;
   margin-bottom: 20px;
 }
 .donaciones__text {
@@ -498,7 +529,7 @@
   font-size: 14px;
 }
 .donaciones__form__button {
-  background-color: #17A398;
+  background-color: #FF6347;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -508,7 +539,7 @@
   transition: background-color 0.3s;
 }
 .donaciones__form__button:hover {
-  background-color: #3DCCC7;
+  background-color: #FF4500;
 }
 .donaciones__historias {
   padding: 40px 0;
@@ -517,7 +548,7 @@
 .donaciones__historias-title {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #17A398;
+  color: #FF6347;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -550,11 +581,31 @@
   margin: 0;
 }
 
+/* Estilos para el botón de ir arriba */
+.btn-volver-arriba {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #FF6347;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.btn-volver-arriba:hover {
+  background-color: #FF4500;
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 1315px) {
   .carousel-inner .carousel-item .title-highlight {
     font-size: 3rem;
-    color: #17A398;
+    color: #FF6347;
     margin-bottom: 1rem;
   }
   .carousel-inner .carousel-item .subtitle {

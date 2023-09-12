@@ -90,6 +90,7 @@
         background-color: $color-hover;
     }
 }
+
 /* SECCION INFO */
 
 .adopt__info {
@@ -101,71 +102,79 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-    &__title {
-        font-size: 3rem;
-        font-weight: 700;
-        margin-bottom: 20px;
-        color: #333;
-    }
-
-    &_parrafo {
-        max-width: 80%;
-        font-size: 1.3rem;
-        line-height: 1.5;
-        color: #555;
-
-    }
-
-    &__button {
-        background-color: $color-principal;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        padding: 10px 20px;
-        font-size: 16px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-
-        &:hover {
-            background-color: $color-hover;
-            color: #333;
-        }
-    }
-}
-
-
-.adopt__section-title {
     text-align: center;
-    margin-bottom: 40px;
+    padding: 2rem;
 }
 
+.adopt__info__title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.adopt__info_parrafo {
+    max-width: 80%;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+/* Estilos para la sección "Proceso de Adopción" */
 .adopt__process {
     background-color: #f7f7f7;
     padding: 60px 0;
+    text-align: center;
+}
 
-    &-step {
-        text-align: center;
-        padding: 20px;
-        border: 1px solid #ccc;
-        border-radius: 10px;
-        margin-bottom: 30px;
-    }
+.adopt__process-step {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease-in-out;
+}
 
-    &-icon {
-        font-size: 36px;
-        color: $color-secundario;
-        margin-bottom: 10px;
-    }
+.adopt__process-step:hover {
+    transform: scale(1.05);
+    /* Aumenta ligeramente el tamaño al pasar el cursor sobre un paso */
+}
 
-    &-title {
-        font-size: 24px;
-        margin-bottom: 10px;
-        color: #333;
-    }
+.adopt__process-icon {
+    font-size: 36px;
+    color: $color-principal;
+    /* Puedes elegir un color que combine con tu paleta de colores */
+    margin-bottom: 10px;
+}
 
-    &-text {
-        font-size: 16px;
-        color: #555;
-    }
+.adopt__process-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.adopt__process-text {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Estilos para los botones */
+.btn {
+    @include button;
+}
+
+.btn:hover {
+    background-color: $color-hover
+        /* Cambio de color al pasar el cursor */
+}
+
+/* Estilos para el título de la sección */
+.adopt__section-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 40px;
 }

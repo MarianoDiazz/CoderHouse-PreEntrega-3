@@ -47,7 +47,7 @@
         }
 
         &-button {
-            background-color: $color-secundario;
+            background-color: $color-principal;
             color: #fff;
             border: none;
             border-radius: 0 5px 5px 0;
@@ -57,7 +57,7 @@
             transition: background-color 0.3s;
 
             &:hover {
-                background-color: #f1bc0e;
+                background-color: $color-hover;
 
             }
         }
