@@ -1,7 +1,4 @@
-@charset "UTF-8";
-/* LightSalmon */
-/* Red (hover) */
-/* SpringGreen */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,700;1,500;1,700&display=swap");
 * {
   padding: 0;
@@ -12,11 +9,12 @@
 
 .navbar-nav .nav-item .nav-link {
   border-bottom: 2px solid transparent;
-  transition: border-color 0.8s;
+  transition: all 0.15s ease;
 }
 .navbar-nav .nav-item .nav-link:hover {
   color: #FF4500;
   text-decoration: none;
+  transform: scale(1.04);
 }
 .navbar-nav .nav-item .nav-link.active {
   border-color: #FF6347;
@@ -177,6 +175,28 @@
   background-color: #FF4500;
 }
 
+.btn-ver-mas {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FF6347;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  background-color: transparent;
+  border: 2px #FF6347 solid;
+  color: #FF6347;
+  transition: all 0.1s ease;
+}
+.btn-ver-mas:hover {
+  background-color: #FF6347;
+  border-color: #FF6347;
+  color: #fff;
+}
+
 /* FOOTER */
 .footer {
   background-color: #333;
@@ -328,7 +348,6 @@
   text-align: center;
   padding: 2rem;
 }
-
 .adopt__info__title {
   font-size: 3rem;
   font-weight: 700;
@@ -336,7 +355,6 @@
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-
 .adopt__info_parrafo {
   max-width: 80%;
   font-size: 1.3rem;
@@ -346,46 +364,40 @@
   margin-top: 20px;
 }
 
-/* Estilos para la sección "Proceso de Adopción" */
 .adopt__process {
   background-color: #f7f7f7;
   padding: 60px 0;
   text-align: center;
 }
-
-.adopt__process-step {
+.adopt__process__step {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 17rem;
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 30px;
   transition: transform 0.3s ease-in-out;
 }
-
-.adopt__process-step:hover {
+.adopt__process__step:hover {
   transform: scale(1.05);
-  /* Aumenta ligeramente el tamaño al pasar el cursor sobre un paso */
 }
-
-.adopt__process-icon {
+.adopt__process__step__icon {
   font-size: 36px;
   color: #FF6347;
-  /* Puedes elegir un color que combine con tu paleta de colores */
   margin-bottom: 10px;
 }
-
-.adopt__process-title {
+.adopt__process__step__title {
   font-size: 24px;
   margin-bottom: 10px;
   color: #333;
 }
-
-.adopt__process-text {
+.adopt__process__step__text {
   font-size: 16px;
   color: #555;
 }
-
-/* Estilos para los botones */
-.btn {
+.adopt__process__step__btn {
   display: inline-block;
   padding: 10px 20px;
   background-color: #FF6347;
@@ -396,14 +408,13 @@
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
+  margin: 0 auto;
 }
-
-.btn:hover {
+.adopt__process__step__btn:hover {
   background-color: #FF4500;
 }
 
-/* Estilos para el título de la sección */
-.adopt__section-title {
+.adopt__process .adopt__section-title {
   font-size: 2rem;
   color: #333;
   margin-bottom: 40px;
@@ -414,7 +425,7 @@
 /* ============= */
 .about {
   padding: 4rem 0;
-  background-color: #e5f4f7;
+  background-color: #fff7f0;
 }
 .about__title {
   text-align: center;
@@ -445,17 +456,18 @@
 /* PAGINA CONTACTANOS */
 .contact {
   padding: 80px 0;
-  background: linear-gradient(to bottom, #f6f9fc, #e0e7ef);
+  background: linear-gradient(to bottom, #fff7f0, #f3d6ac);
 }
 .contact__title {
   text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
   font-size: 3rem;
-  font-weight: bold;
   color: #FF6347;
   margin-bottom: 30px;
 }
 .contact__subtitle {
-  color: #326663;
+  color: #FF4500;
 }
 .contact__info {
   font-size: 16px;
@@ -581,7 +593,6 @@
   margin: 0;
 }
 
-/* Estilos para el botón de ir arriba */
 .btn-volver-arriba {
   display: none;
   position: fixed;
@@ -599,6 +610,42 @@
 
 .btn-volver-arriba:hover {
   background-color: #FF4500;
+}
+
+.testimonials {
+  background-color: #fff7f0;
+  padding: 40px 0;
+  text-align: center;
+}
+.testimonials__title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #FF6347;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+}
+.testimonials__item {
+  display: inline-block;
+}
+.testimonials__item img {
+  max-width: 15rem;
+  min-height: 24rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 35% 2%;
+  margin-bottom: 20px;
+  border: 3px double #FF6347;
+}
+.testimonials__item__text {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: #333;
+  font-style: italic;
+}
+.testimonials__item__author {
+  font-weight: bold;
+  color: #FF6347;
+  font-size: 1.4rem;
 }
 
 /* MEDIA QUERIES */

@@ -2,11 +2,12 @@
     .nav-item {
         .nav-link {
             border-bottom: 2px solid transparent;
-            transition: border-color 0.8s;
+            transition: all 0.15s ease;
 
             &:hover {
                 color: $color-hover;
                 text-decoration: none;
+                transform: scale(1.04);
             }
 
             &.active {

@@ -1,8 +1,11 @@
-$color-principal: #FF6347; /* LightSalmon */
-$color-hover: #FF4500; /* Red (hover) */
-$color-secundario: #f3d6ac; /* SpringGreen */
+$color-principal: #FF6347; 
+$color-hover: #FF4500; 
+$color-secundario: #f3d6ac;
+$color-fondo: #fff7f0;
+$fuente-bold: 'Oswald', sans-serif;
 
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,700;1,500;1,700&display=swap');

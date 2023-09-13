@@ -3,17 +3,18 @@
 
 .contact {
     padding: 80px 0;
-    background: linear-gradient(to bottom, #f6f9fc, #e0e7ef);
+    background: linear-gradient(to bottom, $color-fondo, $color-secundario);
     &__title {
         text-align: center;
+        font-family: $fuente-bold;
+        font-weight: 600;
         font-size: 3rem;
-        font-weight: bold;
         color: $color-principal;
         margin-bottom: 30px;
     }
 
     &__subtitle {
-        color: #326663;
+        color: $color-hover;
     }
 
     &__info {
