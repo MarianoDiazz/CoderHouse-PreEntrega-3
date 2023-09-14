@@ -61,8 +61,15 @@
 
 
 @media (max-width: 780px) {
+    .navbar{
+        position: static;
+    }
+    
     .cards__list:not(h1) {
         margin: 0 2rem;
+    }
+    .cards .card__img{
+        max-height: 10rem;
     }
 
     .carousel-inner {
