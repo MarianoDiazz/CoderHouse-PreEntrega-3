@@ -1,0 +1,57 @@
+.requisitos__adopt {
+    background-color: $color-fondo;
+    padding: 40px 0;
+    text-align: center;
+
+    &__title {
+        font-size: 32px;
+        margin-bottom: 20px;
+        color: $color-principal;
+        text-transform: uppercase;
+        font-family: $fuente-bold;
+    }
+
+    img {
+        border-radius: 20%;
+        border: 3px solid $color-principal;
+        margin-bottom: 20px;
+        width: 80%;
+        max-height: 30rem;
+        object-fit: cover;
+    }
+
+    &__text {
+        text-align: left;
+
+        &__subtitle {
+            font-size: 2rem;
+            font-family: $fuente-bold;
+            margin-bottom: 20px;
+            color: #333;
+            font-style: italic;
+        }
+
+        &__item {
+            margin-bottom: 20px;
+
+            &__number {
+                flex-shrink: 0;
+                width: 30px;
+                height: 30px;
+                background-color: $color-principal;
+                color: white;
+                font-size: 20px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 10px;
+            }
+
+            &__description {
+                font-size: 18px;
+                color: #333;
+            }
+        }
+    }
+}
