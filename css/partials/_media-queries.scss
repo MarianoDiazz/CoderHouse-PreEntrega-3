@@ -61,14 +61,15 @@
 
 
 @media (max-width: 780px) {
-    .navbar{
+    .navbar {
         position: static;
     }
-    
+
     .cards__list:not(h1) {
         margin: 0 2rem;
     }
-    .cards .card__img{
+
+    .cards .card__img {
         max-height: 10rem;
     }
 
@@ -144,6 +145,13 @@
 
     .adopt__info_parrafo {
         display: none;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,
+                minmax(15px, 1fr));
+
     }
 
 }

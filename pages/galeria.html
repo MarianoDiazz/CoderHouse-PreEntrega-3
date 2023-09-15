@@ -4,21 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Informacion de contacto">
-    <meta name="keywords" content="contacto, informacion, telefono, direccion">
+    <meta name="description" content="Galeria de imagenes de algunas mascotas dadas en adopcion">
+    <meta name="keywords" content="Fotos, galeria, imagenes, cachorros">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="https://cdn.icon-icons.com/icons2/644/PNG/512/green_pets_icon-icons.com_59415.png"
         type="image/x-icon">
     <link rel="stylesheet" href="../css/styles.css">
-    <title>Contactanos</title>
+    <title>Galeria</title>
 </head>
 
 <body>
-
-    <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fs-5">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">
@@ -35,7 +32,7 @@
                         <a class="nav-link" aria-current="page" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="contactanos.html">Contactanos</a>
+                        <a class="nav-link" href="contactanos.html">Contactanos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="nosotros.html">Nosotros</a>
@@ -44,7 +41,7 @@
                         <a class="nav-link" href="adoptar.html">Adoptar</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="galeria.html">Galeria</a>
+                        <a class="nav-link active" href="galeria.html">Galeria</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link donar-link" href="donaciones.html">Quiero Donar</a>
@@ -55,68 +52,70 @@
     </nav>
 
     <main>
-
-        <section class="contact">
-            <div class="container">
-                <h2 class="contact__title" data-aos="fade-down-right">CONTACTANOS</h2>
-                <div class="row" data-aos="fade-left" data-aos-delay="200">
-                    <div class="col-md-6 my-5">
-                        <h3 class="contact__subtitle">Información de Contacto</h3>
-                        <p class="contact__text">
-                            Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto con nosotros.
-                            Estamos aquí para ayudarte.
-                        </p>
-                        <p class="contact__info"><i class="fas fa-envelope"></i> Correo electrónico:
-                            info@mascotasfelices.com</p>
-                        <p class="contact__info"><i class="fas fa-phone"></i> Teléfono: +3815644789</p>
-                        <p class="contact__info"><i class="fas fa-map-marker-alt"></i> Dirección: Casa 6,
-                            Las Rosas</p>
-                        <p class="contact__info"><i class="fas fa-clock"></i> Horario de Atención: Lun-Vie, 9:00 AM -
-                            5:00 PM</p>
-
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.1414792799137!2d-65.27686656965834!3d-26.80659242228905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d2f737ce54d%3A0x49b39c1bd9f6e8e9!2sLas%20Rosas%20II!5e0!3m2!1ses-419!2sar!4v1692293048815!5m2!1ses-419!2sar"
-                            width="100%" height="250" style="border:0" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                    <div class="col-md-6 my-5">
-                        <form>
-                            <h3 class="contact__subtitle">Envíanos un Mensaje</h3>
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Nombre</label>
-                                <input type="text" class="form-control" id="name" name="name" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Correo Electrónico</label>
-                                <input type="email" class="form-control" id="email" name="email" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="subject" class="form-label">Asunto</label>
-                                <input type="text" class="form-control" id="subject" name="subject" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="message" class="form-label">Mensaje</label>
-                                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-                            </div>
-                            <div class="text-center">
-                                <button type="submit" class="contact__btn">Enviar Mensaje</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+        <div class="text-center my-3">
+            <h1 class="title-gallery">GALERIA DE IMAGENES</h1>
+        </div>
+        <div class="gallery container my-5">
+            <div class="gallery__item">
+                <img class="gallery__image"
+                    src="https://i.pinimg.com/originals/1c/36/62/1c366227f7749c1ec00dc0bcef7a4641.jpg"
+                    alt="Perro marron dando la patita con fondo rosado">
             </div>
-        </section>
+
+            <div class="gallery__item">
+                <img class="gallery__image"
+                    src="https://i.pinimg.com/564x/72/a6/a2/72a6a22b629147e6d4453839091d99c1.jpg"
+                    alt="Perro con pelota de goma">
+            </div>
+
+            <div class="gallery__item">
+                <img class="gallery__image"
+                    src="https://i.pinimg.com/564x/29/87/be/2987bec222834e58a384599214010b00.jpg"
+                    alt="Mujer en parque con su perro ">
+            </div>
+
+            <div class="gallery__item">
+                <img class="gallery__image"
+                    src="https://i.pinimg.com/564x/b8/a4/1c/b8a41c8d1e7834793ff55f6e346c2040.jpg"
+                    alt="Adiestrador jugando con su perro">
+            </div>
+
+            <div class="gallery__item">
+                <img class="gallery__image"
+                    src="https://i.pinimg.com/564x/2c/ea/4c/2cea4cadf0a9cfd5266e81311a266b75.jpg"
+                    alt="Perro con veterinario revisando oreja">
+            </div>
+
+            <div class="gallery__item">
+                <img class="gallery__image"
+                    src="https://i.pinimg.com/564x/a8/60/a9/a860a90e7d17b6bb4426381728882441.jpg"
+                    alt="Mujer entrenando a su perro para cruzar el aro">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__image"
+                    src="https://images.pexels.com/photos/3299906/pexels-photo-3299906.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="Grupo de perros">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__image"
+                    src="https://images.pexels.com/photos/7682530/pexels-photo-7682530.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="Perro pequeño negro dando la patita">
+            </div>
+
+        </div>
+        <div class="pagination my-3">
+            <a href="#" class="page-link active">1</a>
+            <a href="#" class="page-link">2</a>
+            <a href="#" class="page-link">3</a>
+        </div>
         <div>
             <button id="btnVolverArriba" class="btn-volver-arriba">
                 <i class="fas fa-arrow-up"></i>
             </button>
         </div>
-
     </main>
 
-
-
-
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -155,18 +154,10 @@
         </div>
     </footer>
 
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
     <script src="../js/main.js"></script>
-
 </body>
 
 </html>

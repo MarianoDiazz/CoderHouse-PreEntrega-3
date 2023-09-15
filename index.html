@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="https://cdn.icon-icons.com/icons2/644/PNG/512/green_pets_icon-icons.com_59415.png"
         type="image/x-icon">
     <link rel="stylesheet" href="./css/styles.css">
@@ -40,6 +41,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./pages/adoptar.html">Adoptar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/galeria.html">Galeria</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link donar-link" href="./pages/donaciones.html">Quiero Donar</a>
@@ -197,13 +201,13 @@
                     </div>
                 </div>
 
-                <div class="text-center">
+                <div class="text-center" data-aos="fade-down" data-aos-delay="150">
                     <a href="./pages/adoptar.html" class="btn-ver-mas fs-5">Ver mas</a>
                 </div>
         </section>
 
         <!-- SECCION TESTIMONIOS -->
-        <section class="testimonials container-fluid my-5">
+        <section class="testimonials container-fluid my-5" data-aos="zoom-out-up" data-aos-delay="200">
             <h2 class="testimonials__title text-center">QUE DICEN NUESTROS ADOPTANTES</h2>
             <div id="testimonialCarousel" class="testimonials__carousel carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -250,7 +254,7 @@
         </section>
 
         <!-- SECCION GRID -->
-        <section class="container info my-5">
+        <section class="container info my-5" data-aos="zoom-out-down">
             <div class="box box1">
                 <h1>Brindamos siempre lo mejores para ellos</h1>
             </div>
@@ -265,18 +269,18 @@
             </div>
         </section>
 
-<!-- SECCION REQUISITOS -->
+        <!-- SECCION REQUISITOS -->
         <section class="requisitos__adopt">
             <div class="container">
                 <h3 class="requisitos__adopt__title">¿CON GANAS DE SUMAR UN INTEGRANTE A TU FAMILIA?</h3>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="zoom-in-right">
                         <div class="requisitos__adopt__img">
                             <img src="https://images.pexels.com/photos/6303378/pexels-photo-6303378.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                 alt="mujer contenta con su perro">
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="zoom-in-right">
                         <div class="requisitos__adopt__text">
                             <p class="requisitos__adopt__text__subtitle">REQUISITOS PARA ADOPTAR</p>
                             <div class="requisitos__adopt__text__item d-flex">
@@ -331,7 +335,8 @@
                     <ul class="footer-links">
                         <li><a href="/pages/adoptar.html" class="footer-link"><i class="fas fa-paw"></i> Adoptar
                                 mascota</a></li>
-                        <li><a href="#" class="footer-link"><i class="fas fa-image"></i> Galería</a></li>
+                        <li><a href="./pages/galeria.html" class="footer-link"><i class="fas fa-image"></i> Galería</a>
+                        </li>
                         <li><a href="./pages/nosotros.html" class="footer-link"><i class="fas fa-info-circle"></i> Sobre
                                 nosotros</a></li>
                     </ul>
@@ -369,7 +374,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="./js/main.js"></script>
 </body>
 
