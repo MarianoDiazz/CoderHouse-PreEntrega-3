@@ -253,21 +253,115 @@
                             <h3 class="adopt__process__step__title">Completa la Solicitud</h3>
                             <p class="adopt__process__step__text">Llena nuestro formulario de adopción para que podamos
                                 conocerte mejor.</p>
-                            <a href="formulario.html" class="adopt__process__step__btn">Completar Solicitud</a>
+                            <button type="button" class="btn btn-primary adopt__process__step__btn"
+                                data-bs-toggle="modal" data-bs-target="#adoptionModal">Completar Solicitud</button>
                         </div>
                     </div>
+
                     <div class="col-md-4" data-aos="fade-down" data-aos-delay="900">
                         <div class="adopt__process__step">
                             <i class="fas fa-home adopt__process__step__icon"></i>
                             <h3 class="adopt__process__step__title">Prepara tu Hogar</h3>
                             <p class="adopt__process__step__text">Acondiciona tu hogar para dar la bienvenida a tu nueva
                                 mascota.</p>
-                            <a href="preparacion.html" class="adopt__process__step__btn">Ver Consejos</a>
+                            <button class="adopt__process__step__btn" data-bs-toggle="modal"
+                                data-bs-target="#consejosModal">Ver Consejos</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- MODAL FORMULARIO -->
+        <div class="modal fade" id="adoptionModal" tabindex="-1" aria-labelledby="adoptionModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="adoptionModalLabel">Formulario de Adopción</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre Completo</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label">Teléfono de Contacto</label>
+                                <input type="tel" class="form-control" id="telefono" name="telefono" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="direccion" class="form-label">Dirección</label>
+                                <input type="text" class="form-control" id="direccion" name="direccion" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="ciudad" class="form-label">Ciudad</label>
+                                <input type="text" class="form-control" id="ciudad" name="ciudad" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="razon" class="form-label">Razón para adoptar</label>
+                                <textarea class="form-control" id="razon" name="razon" rows="4" required></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="tipo_mascota" class="form-label">Tipo de Mascota</label>
+                                <select class="form-select" id="tipo_mascota" name="tipo_mascota" required>
+                                    <option value="perro">Perro</option>
+                                    <option value="gato">Gato</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="experiencia" class="form-label">Experiencia con Mascotas</label>
+                                <select class="form-select" id="experiencia" name="experiencia" required>
+                                    <option value="sin_experiencia">Sin Experiencia</option>
+                                    <option value="poca_experiencia">Poca Experiencia</option>
+                                    <option value="experiencia_media">Experiencia Media</option>
+                                    <option value="experiencia_avanzada">Experiencia Avanzada</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="submit" class="adopt__process__step__btn d-flex justify-content-end">Enviar
+                            Solicitud</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MODAL CONSEJOS -->
+        <div class="modal fade" id="consejosModal" tabindex="-1" aria-labelledby="consejosModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="consejosModalLabel">Consejos para la Adopción y Cuidado de tu
+                            Mascota</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>Proporciona un espacio seguro y cómodo para tu mascota en tu hogar.</li>
+                            <li>Alimenta a tu mascota con una dieta equilibrada y apropiada para su especie y edad.</li>
+                            <li>Asegúrate de que tu mascota tenga suficiente ejercicio y estimulación mental.</li>
+                            <li>Visita regularmente al veterinario para chequeos de salud y vacunaciones.</li>
+                            <li>Brinda amor, atención y tiempo de calidad a tu mascota para fortalecer el vínculo.</li>
+                            <li>Educa a tu mascota con amor y paciencia usando técnicas de entrenamiento positivas.</li>
+                            <li>Proporciona juguetes y enriquecimiento ambiental para mantener a tu mascota activa y
+                                feliz.</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div>
             <button id="btnVolverArriba" class="btn-volver-arriba">
                 <i class="fas fa-arrow-up"></i>
