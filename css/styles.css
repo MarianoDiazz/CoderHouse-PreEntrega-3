@@ -99,6 +99,11 @@
   font-weight: 900;
   font-family: "Oswald", sans-serif;
 }
+.carousel-inner .carousel-item img {
+  min-height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .carousel-inner .carousel-item .title-highlight-principal {
   font-size: 4rem;
   color: #FF6347;

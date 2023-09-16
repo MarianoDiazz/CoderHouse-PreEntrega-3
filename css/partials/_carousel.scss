@@ -7,6 +7,10 @@
             font-weight: 900;
             font-family: $fuente-bold;
         }
+        & img{
+            min-height: 20rem;
+            object-fit: cover;
+        }
 
         .title-highlight-principal {
             font-size: 4rem;
