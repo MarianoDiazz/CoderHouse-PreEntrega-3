@@ -1,0 +1,59 @@
+.title-gallery{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: $color-principal;
+    font-family: $fuente-bold;
+    font-weight: 700;}
+
+.gallery {
+    background-color: $color-fondo;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+        minmax(20rem, 1fr));
+
+    &__item {
+        margin: 1rem;
+        box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+        overflow: hidden;
+    }
+
+    &__image {
+        max-height: 28rem;
+        min-height: 28rem;
+        display: block;
+        width: 100%;
+        object-fit: cover;
+        transition: transform 400ms ease-out;
+
+        &:hover {
+            transform: scale(1.15);
+        }
+    }
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.page-link {
+    margin: 0 5px;
+    padding: 10px 15px;
+    color: $color-principal;
+    background-color: transparent;
+    text-decoration: none;
+    border: 2px solid $color-principal;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+        background-color: $color-hover;
+        color: white;
+    }
+}
+
+.page-link.active {
+    background-color: $color-principal;
+    color: white;
+    border-color: $color-principal;
+}
